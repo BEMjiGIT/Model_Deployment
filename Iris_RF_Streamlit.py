@@ -17,7 +17,7 @@ def main():
         result = make_predictions(features)
         st.success(f"The prediction flower is: {result}")
         
-    def make_predictions():
+def make_predictions():
         input_array = np.array(features).reshape(1, -1)
         prediction = model.predict(input_array)
         return prediction[0]
