@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load("https://github.com/BEMjiGIT/Streamlit_Iris_Prediction/blob/53e7568c911db3648c1818660de4cb334bfe7731/Iris_RF_Model.pkl", mmap_mode=None)
+model = joblib.load("./Iris_RF_Model.pkl")
 
 def main():
     st.title("Machine Leaning Iris Prediction Model Deployment")
