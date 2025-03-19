@@ -17,10 +17,10 @@ def main():
         result = make_predictions(features)
         st.success(f"The prediction flower is: {result}")
         
-def make_predictions():
-        input_array = np.array(features).reshape(1, -1)
-        prediction = model.predict(input_array)
-        return prediction[0]
+def make_predictions(features):
+    input_array = np.array(features).reshape(1, -1)
+    prediction = model.predict(input_array)
+    return prediction[0]
     
 if __name__ == "__main__":
     main()
