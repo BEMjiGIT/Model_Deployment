@@ -5,7 +5,7 @@ import numpy as np
 model = joblib.load("Iris_RF_Model.pkl")
 
 def main():
-    st.title("Machine Leaning Iris Prediction Model Deployment")
+    st.title("Machine Learning Iris Prediction Model Deployment")
     
     sepal_length = st.slider('sepal_length', min_value=0.0, max_value=10.0, value=0.1)
     sepal_width = st.slider('sepal_width', min_value=0.0, max_value=10.0, value=0.1)
