@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-with open("Iris_RF_Model.pkl", "rb'") as f:
+with open("Streamlit_Iris_Prediction/Iris_RF_Model.pkl", "rb'") as f:
     model = pickle.load(f)
 
 def main():
