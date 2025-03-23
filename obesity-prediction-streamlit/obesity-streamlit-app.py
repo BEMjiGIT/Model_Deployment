@@ -1,20 +1,20 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
+import pickle as pkl
 
 
 with open('obesity-prediction-streamlit/rf_model.pkl', 'rb') as file:
-    loaded_model = pickle.load(file)
+    loaded_model = pkl.load(file)
 
 with open('obesity-prediction-streamlit/scaler.pkl', 'rb') as file:
-    loaded_scaler = pickle.load(file)
+    loaded_scaler = pkl.load(file)
 
 with open('obesity-prediction-streamlit/encoder.pkl', 'rb') as file:
-    loaded_encoder = pickle.load(file)
+    loaded_encoder = pkl.load(file)
 
 with open('obesity-prediction-streamlit/target_vals.pkl', 'rb') as file:
-    loaded_target_vals = pickle.load(file)
+    loaded_target_vals = pkl.load(file)
 
 def main():
     st.title('Machine Leaning Obesity Prediction App')
