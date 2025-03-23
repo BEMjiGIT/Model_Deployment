@@ -82,7 +82,7 @@ class ModelRF:
 scaler = StandardScaler()
 encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
 
-model = ModelRF(data='ObesityDataSet_raw_and_data_sinthetic.csv')
+model = ModelRF(data='obesity-prediction-streamlit/ObesityDataSet_raw_and_data_sinthetic.csv')
 model.data_split(target_column='NObeyesdad')
 data_targets = model.data_preprocessing(scaler, encoder)
 print(f'Data Targets: {data_targets}')
