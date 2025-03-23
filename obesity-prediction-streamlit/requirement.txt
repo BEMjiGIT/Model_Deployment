@@ -3,4 +3,3 @@ pickle
 numpy
 pandas
 scikit-learn
-sklearn
