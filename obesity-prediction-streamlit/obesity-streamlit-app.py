@@ -5,16 +5,16 @@ import numpy as np
 import pickle as pkl
 
 
-with open('/obesity-prediction-streamlit/rf_model.pkl', 'rb') as file:
+with open('obesity-prediction-streamlit/rf_model.pkl', 'rb') as file:
     loaded_model = pkl.load(file)
 
-with open('/obesity-prediction-streamlit/scaler.pkl', 'rb') as file:
+with open('obesity-prediction-streamlit/scaler.pkl', 'rb') as file:
     loaded_scaler = pkl.load(file)
 
-with open('/obesity-prediction-streamlit/encoder.pkl', 'rb') as file:
+with open('obesity-prediction-streamlit/encoder.pkl', 'rb') as file:
     loaded_encoder = pkl.load(file)
 
-with open('/obesity-prediction-streamlit/target_vals.pkl', 'rb') as file:
+with open('obesity-prediction-streamlit/target_vals.pkl', 'rb') as file:
     loaded_target_vals = pkl.load(file)
 
 # loaded_model = joblib.load('obesity-prediction-streamlit/rf_model.pkl')
