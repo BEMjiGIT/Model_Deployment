@@ -1,2 +1,2 @@
-# Streamlit_Iris_Prediction
-Streamlit App to Predict Iris Dataset
+# Streamlit Model Deployment
+Model Deployment using Streamlit
