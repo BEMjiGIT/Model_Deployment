@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load('Iris_RF_Model.pkl')
+model = joblib.load("Iris_RF_Model.pkl")
 
 def main():
     st.title("Machine Leaning Iris Prediction Model Deployment")
