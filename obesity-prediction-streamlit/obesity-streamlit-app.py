@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle as pkl
-import sklearn.preprocessing
 
 with open('obesity-prediction-streamlit/rf_model.pkl', 'rb') as file:
     loaded_model = pkl.load(file)
