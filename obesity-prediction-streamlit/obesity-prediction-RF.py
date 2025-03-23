@@ -72,12 +72,6 @@ class ModelRF:
     def export_target_vals(self, filename):
         with open(filename, 'wb') as file:
             pkl.dump(self.target_vals, file)
-    
-    @staticmethod
-    def import_model(filename):
-        with open(filename, 'rb') as file:
-            loaded_data = pkl.load(file)
-        return loaded_data
 
 scaler = StandardScaler()
 encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
