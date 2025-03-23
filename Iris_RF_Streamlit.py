@@ -15,6 +15,12 @@ def main():
     if st.button("Predict"):
         features = [sepal_length, sepal_width, petal_length, petal_width]
         result = make_predictions(features)
+        if result is 1:
+            result = "Iris-setosa"
+        elif result is 2:
+            result = "iris-versicolor"
+        else:
+            result = "Iris-virginica"
         st.success(f"The prediction flower is: {result}")
         
 def make_predictions(features):
