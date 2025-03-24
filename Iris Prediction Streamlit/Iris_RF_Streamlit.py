@@ -1,8 +1,12 @@
 import streamlit as st
-import joblib
+# import joblib
 import numpy as np
+import pickle as pkl
 
-model = joblib.load("Iris Prediction Streamlit/Iris_RF_Model.pkl")
+with open('Iris Prediction Streamlit/Iris_RF_Model.pkl', 'rb') as file:
+    model = pkl.load(file)
+    
+# model = joblib.load("Iris Prediction Streamlit/Iris_RF_Model.pkl")
 
 def main():
     st.title("Machine Leaning Iris Prediction Model Deployment")
